@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/colorbg"
+    tools:context=".UpdateProfil">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_updtprofil"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/bg_menu_home"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:id="@+id/textPelajar"
+            style="@style/textlogin"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:text="UPDATE PROFIL"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_UpidProfil"
+                    style="@style/EditTextLogin"
+                    android:hint="ID Profil"
+                    android:enabled="false"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_UpnamaProfil"
+                    style="@style/EditTextLogin"
+                    android:hint="Nama"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_UpEmailProfil"
+                    style="@style/EditTextLogin"
+                    android:longClickable="false"
+                    android:hint="Email"
+                    android:enabled="false"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/et_UpNohpProfil"
+                    style="@style/EditTextLogin"
+                    android:hint="NoHP"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+            <Button
+                android:id="@+id/btnSmpnProfil"
+                style="@style/ButtonLogin"
+                android:layout_marginBottom="15px"
+                android:padding="6dp"
+                android:text="SIMPAN" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pesan"
+    android:background="@color/colorbg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_gravity="center|top"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dataMakanan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTitle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:scrollbars="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dataMinuman"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Atas Nama"
+                    android:textColor="@color/white"/>
+                <EditText
+                    android:id="@+id/et_atNama"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:padding="2sp"
+                    android:background="@drawable/bg_edittextkecil"
+                    android:inputType="text"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="No.Meja"
+                    android:textColor="@color/white"/>
+                <EditText
+                    android:id="@+id/et_noMeja"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:padding="2sp"
+                    android:background="@drawable/bg_edittextkecil"
+                    android:inputType="number"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_ChcOut"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:text=" Lanjut Pembayaran "
+            android:textSize="12sp"
+            android:textColor="@color/colorTitle"
+            android:background="@drawable/btn_master_home"/>
+    </LinearLayout>
+</LinearLayout>

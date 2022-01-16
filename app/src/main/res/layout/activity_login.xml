@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <TextView
+        style="@style/titlePage"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="Welcome\nBack` in\nSaung Disalfa"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="480dp"
+            android:background="@drawable/bg_putih"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/landimg"/>
+            <TextView
+                style="@style/textlogin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="LOGIN"
+                android:textSize="24sp"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="email"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-5dp">
+                    <EditText
+                        android:id="@+id/editext_email"
+                        style="@style/EditTextLogin"
+                        android:background="@drawable/bt_edittext"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="password"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/laypass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-5dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editext_pass"
+                        style="@style/EditTextLogin"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/bt_edittext"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textlp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="15dp"
+                    android:text="Lupa Password?"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    style="@style/ButtonLogin"
+                    android:layout_marginBottom="25dp"
+                    android:padding="6dp"
+                    android:textSize="14dp"
+                    android:text="Login" />
+
+            </LinearLayout>
+            <ProgressBar
+                android:id="@+id/pbLogin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-220dp"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorbg"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
